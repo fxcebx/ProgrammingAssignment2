@@ -6,7 +6,7 @@
 ##
 ## Computing the inverse of a matrix
 ## - the matrix supplied has to be invertible, this is not checked
-## - the matrix has to be quadratic
+## - the matrix has to be square, this is not checked
 ##
 ## How to use the functions see bottom
 ## 
@@ -65,7 +65,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## If so, it gets the result and skips the computation. 
 ## If not, it computes the inverse, sets the value in the cache with
 ## the setinverse function.
-## The matrix given has to be invertible, thats not checked here.
+## The matrix given has to be invertible and square, not checked here.
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of x
   ## the matrix supplied has to be invertible, not checked
